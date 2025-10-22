@@ -1,0 +1,88 @@
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #f3e8ff, #e0c3fc);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #4a4a4a;
+}
+
+.container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(128, 90, 213, 0.15);
+  text-align: center;
+  width: 85%;
+  max-width: 650px;
+  transition: transform 0.2s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+input {
+  padding: 10px 14px;
+  width: 65%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbb5f5;
+  font-size: 15px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a78bfa;
+  box-shadow: 0 0 8px rgba(167, 139, 250, 0.4);
+}
+
+button {
+  padding: 12px 22px;
+  border: none;
+  background-color: #a78bfa;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+  background-color: #8b5cf6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(139, 92, 246, 0.3);
+}
+
+#recipeResults {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.recipe {
+  background-color: #faf7ff;
+  border: 1px solid #e1d7fa;
+  padding: 12px;
+  border-radius: 12px;
+  width: 200px;
+  box-shadow: 0 3px 8px rgba(167, 139, 250, 0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recipe:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.2);
+}
+
+.recipe img {
+  width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+}
